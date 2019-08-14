@@ -178,7 +178,7 @@
                                        "details":"Open the IBM App Connect Enterprise Console. If you don't already have one, create and start a queue manager:<br><code><span class='cmdname'>crtmqm</span> <span class='varname'>TESTQM</span></code><br><code><span class='cmdname'>strmqm</span> <span class='varname'>TESTQM</span></code>"
                                     },
                                     {
-                                       "details":"Next create a queue and a listener by typing the following commands:<br><code>runmqsc <span class='varname'>TESTQM</span></code><br><code>define ql(EXAMPLE)</code><br><code>define listener(LISTENER1) TRPTYPE(TCP) PORT(2414)</code>"
+                                       "details":"Next create a queue and a listener by typing the following commands:<br><code>runmqsc <span class='varname'>TESTQM</span></code><br><code>define ql(EXAMPLE)</code><br><code>define listener(LISTENER1) TRPTYPE(TCP) PORT(2414)</code><br><code>start listener(LISTENER1)</code>"
                                     },
 									{
 										"details":"The connection to the queue manager will attempt to use the default server connection channel named SYSTEM.DEF.SVRCONN but you shouldn't need to create this as it will have been created when the queue manager was created. You may also need to consider your MQ channel security settings."
